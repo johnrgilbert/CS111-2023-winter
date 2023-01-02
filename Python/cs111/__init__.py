@@ -1,7 +1,7 @@
 # use "import cs111" to use the cs111 course python functions
 
 from cs111.temperature import make_A
-from cs111.temperature import make_A_3D
+# from cs111.temperature import make_A_3D
 from cs111.temperature import make_A_small
 from cs111.temperature import make_b
 from cs111.temperature import make_b_small
@@ -9,7 +9,7 @@ from cs111.temperature import radiator
 
 from cs111.LU import LUfactor
 from cs111.LU import Lsolve
-from cs111.LU import Usolve
+# from cs111.LU import Usolve
 from cs111.LU import LUsolve
 from cs111.LU import LUfactorNoPiv
 
@@ -30,8 +30,8 @@ from cs111.floatingpoint import bits
 
 from cs111.gistemp import get_gistemp
 
-from cs111.minimize import gradient_descent
-from cs111.minimize import gradient_momentum
+# from cs111.minimize import gradient_descent
+# from cs111.minimize import gradient_momentum
 
 from cs111.ode import ode1
 from cs111.ode import ode2
