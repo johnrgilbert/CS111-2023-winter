@@ -1,0 +1,26 @@
+# Ignore Emacs, Vim, and Jupyter work files
+*~
+\#*
+*.swp
+.ipynb_checkpoints/
+__pycache__
+
+# Ignore LaTeX work files
+*.aux
+*.log
+
+# Ignore MacOS directory display format files 
+.DS_Store
+
+# Ignore subdirectories not to be archived on GitHub
+2020
+/2020/
+laplacians
+/laplacians/
+/Assessment/
+/Exams/
+/Grades/
+/Images/
+/Organization/
+/SectionMaterials/
+/TAs/
