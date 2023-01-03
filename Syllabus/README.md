@@ -2,7 +2,7 @@
 
 ### Health and Safety
 
-Welcome to CS 111! I am still delighted that we are meeting in person instead of on Zoom like a couple of years ago. 
+Welcome to CS 111! I am delighted that we are meeting in person instead of on Zoom like a couple of years ago. 
 
 UCSB's [current COVID protocols are online here](https://www.ucsb.edu/COVID-19-information/campus-updates). 
 Everyone on campus is fully vaccinated for COVID (with a very few carefully handled exceptions). 
