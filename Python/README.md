@@ -8,12 +8,12 @@ We will be using [Python](https://docs.python.org/3/) (version 3.5 or higher) fo
 I strongly recommend that you set up your own laptop or computer
 to run Jupyter and Python (and numpy, scipy, and matplotlib).
 That's the way I do it myself. The TAs will demo the setup process
-in the first section, on Wednesday, September 29.
+in the first section, on Wednesday, January 11.
 
 We will use a handful of demo routines in Python that live in a
 module called **cs111**. You'll need to be able to import them too.
 
-Previous versions of this course used [MATLAB](https://www.mathworks.com/products/matlab.html), which is a proprietary
+Back in the 2000's, this course used [MATLAB](https://www.mathworks.com/products/matlab.html), which is a proprietary
 interactive numerical software package that’s widely used in
 engineering. ([UCSB has a campuswide MATLAB license](https://www.software.ucsb.edu/info/matlab).) Numpy is
 designed to look a lot like Matlab. They both use arrays and matrices
@@ -25,19 +25,19 @@ to Matlab’s plotting routines.
 
 ### Clone the CS 111 directory from GitHub
 
-The first thing to do is to use **git** to clone the **CS111-2021-Fall** tree from the [CS 111 GitHub site](https://github.com/johnrgilbert/CS111-2021-fall/tree/main).
+The first thing to do is to use **git** to clone the **CS111-2023-winter** tree from the [CS 111 GitHub site](https://github.com/johnrgilbert/CS111-2023-winter/tree/main).
 Navigate to the site, click on the green "Code" button, and select
 a method (HTTPS, SSH, or GitHub CLI) to use. I prefer SSH myself
 because you don't have to type passwords all the time, but do
 whatever works for you. In my old-fashioned way, I would just copy
 the string under SSH, then on my own laptop I would get a command
-line and navigate to wherever I wanted the **CS111-2021-Fall/**
+line and navigate to wherever I wanted the **CS111-2023-winter/**
 directory to be, and say **git clone the-string**.
 This gets you a local copy of all the lecture materials, reading materials,
 homework, syllabus, and so forth as well as the **cs111** Python module.
 
 Any time you want to make sure your copy is up to date,
-you can just navigate to your **CS111-2021-Fall/** directory
+you can just navigate to your **CS111-2023-winter/** directory
 and say **git pull**. 
 
 ### Download Anaconda 3
@@ -62,6 +62,6 @@ on your computer and say **jupyter notebook**.
 That will open a page in your web browser pointing to your current 
 directory, and from there you can start individual notebook files.
 The first time, you might want to copy into that directory the file 
-**CS111-2021-fall/Python/Scratch.ipynb**, which is a notebook with all
+**CS111-2023-winter/Python/Scratch.ipynb**, which is a notebook with all
 the standard imports for CS111.
 You can run the notebook files from lecture the same way.

@@ -15,8 +15,8 @@ __pycache__
 # Ignore subdirectories not to be archived on GitHub
 2021
 /2021/
-laplacians
-/laplacians/
+S22-graph-laplacians
+/S22-graph-laplacians/
 /Assessment/
 /Exams/
 /Grades/
