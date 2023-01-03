@@ -7,11 +7,10 @@ Welcome to CS 111! I am still delighted that we are meeting in person instead of
 UCSB's [current COVID protocols are online here](https://www.ucsb.edu/COVID-19-information/campus-updates). 
 Everyone on campus is fully vaccinated for COVID (with a very few carefully handled exceptions). 
 Masking indoors is not required but is strongly encouraged, especially in crowded spaces like our classroom. 
-I will wear a well-fitting mask during this class except when I'm
-actually lecturing, 
+I will wear a well-fitting mask during this class except when I'm actually lecturing, 
 and my advice is that you do the same.
 
-If you feel sick, don't come to class. Email me ([gilbert@cs.ucsb.edu])(mailto:gilbert@cs.ucsb.edu), 
+If you feel sick, don't come to class. Email me (gilbert@cs.ucsb.edu), 
 and I will make sure you don't lose out on lecture materials or on help with assignments. 
 
 Okay, now on to the details of course requirements and stuff....
@@ -69,7 +68,7 @@ We will use Jupyter notebooks to run Python interactively, in a web browser, bot
 
 You do not have to buy a textbook for this course. I will assign readings from various online sources, and [they will also be available on the course GitHub site](https://github.com/johnrgilbert/CS111-2023-winter/tree/main/Readings). Several readings will come from the online book *Numerical Computing with Matlab*  (I just call it NCM) by Cleve Moler ([chapters are online here](https://www.mathworks.com/moler/chapters.html)). This book uses Matlab rather than Python, but it's still a good reference for several of the topics we will study.
 
-Professor Gil Strang of MIT has recorded [his terrific lectures on linear algebra here](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/). I recommend watching the first few lectures, which are a great way to review the background for the first half of this course.
+Professor Gil Strang of MIT has recorded [his terrific lectures on linear algebra here](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8). I recommend watching the first few lectures, which are a great way to review the background for the first half of this course.
 
 ### Zoom Zoom Zoom
 
