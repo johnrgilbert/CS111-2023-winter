@@ -13,7 +13,7 @@ in the first section, on Wednesday, January 11.
 We will use a handful of demo routines in Python that live in a
 module called **cs111**. You'll need to be able to import them too.
 
-Back in the 2000's, this course used [MATLAB](https://www.mathworks.com/products/matlab.html), which is a proprietary
+Back in the 2000's and 2010's, this course used [MATLAB](https://www.mathworks.com/products/matlab.html), which is a proprietary
 interactive numerical software package that’s widely used in
 engineering. ([UCSB has a campuswide MATLAB license](https://www.software.ucsb.edu/info/matlab).) Numpy is
 designed to look a lot like Matlab. They both use arrays and matrices
