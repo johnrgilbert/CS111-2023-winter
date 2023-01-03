@@ -27,7 +27,7 @@ to Matlab’s plotting routines.
 
 The first thing to do is to use **git** to clone the **CS111-2023-winter** tree from the [CS 111 GitHub site](https://github.com/johnrgilbert/CS111-2023-winter/tree/main).
 Navigate to the site, click on the green "Code" button, and select
-a method (HTTPS, SSH, or GitHub CLI) to use. I prefer SSH myself
+a method (SSH, HTTPS, or GitHub CLI) to use. I prefer SSH myself
 because you don't have to type passwords all the time, but do
 whatever works for you. In my old-fashioned way, I would just copy
 the string under SSH, then on my own laptop I would get a command
