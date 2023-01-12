@@ -43,7 +43,7 @@ When a homework problem requires writing some Python code, you should turn in al
 
 - Any figures or plots you produced (can be in a screenshot from Jupyter).
 
-You will write up your homework using LaTeX, which is the standard markup language for mathematical documents and is good to know for any future math or CS writing you may do. To give you some examples of LaTeX, I will give you both the .pdf file and the .tex file (markup source file) for every homework assignment. The t.a.s will give a LaTeX tutorial in the first section on January 11.
+You will write up your homework using LaTeX, which is the standard markup language for mathematical documents and is good to know for any future math or CS writing you may do. To give you some examples of LaTeX, I will give you both the .pdf file and the .tex file (markup source file) for every homework assignment. The t.a.s will give a LaTeX tutorial in the first section on January 18.
 
 ### Quiz Policy
 
@@ -62,7 +62,7 @@ We will use Python (version 3.5 or higher) for programming in the course, leanin
 - scipy: More advanced numerical computing, including sparse matrices
 - matplotlib: Plotting and visualization
 
-We will use Jupyter notebooks to run Python interactively, in a web browser, both for demos in class and for your programming assignments. The [course GitHub site has details of how to do this](https://github.com/johnrgilbert/CS111-2023-winter/tree/main/Python). The GitHub site also has the cs111 Python software from class that you will use in some assignments. The t.a.s will demo the setup process in the first section, on Wednesday, January 11.
+We will use Jupyter notebooks to run Python interactively, in a web browser, both for demos in class and for your programming assignments. The [course GitHub site has details of how to do this](https://github.com/johnrgilbert/CS111-2023-winter/tree/main/Python). The GitHub site also has the cs111 Python software from class that you will use in some assignments. The t.a.s will demo the setup process in the first section, on Wednesday, January 18.
 
 ### Textbooks and Assigned Readings
 
