@@ -57,8 +57,7 @@ def Lsolve(L, b):
     m, n = L.shape
     assert m == n, "matrix L must be square"
     assert np.all(np.tril(L) == L), "matrix L must be lower triangular"
-    if unit_diag:
-        assert np.all(np.diag(L) == 1), "matrix L must have ones on the diagonal"
+    assert np.all(np.diag(L) == 1), "matrix L must have ones on the diagonal"
     
     # Make a copy of the rhs that we will transform into the solution
     assert b.ndim == 1, "right-hand side must be a 1-dimensional vector"
