@@ -48,7 +48,6 @@ def Lsolve(L, b):
     Parameters: 
       L: the matrix, must be square, lower triangular, with ones on the diagonal
       b: the right-hand side vector
-      unit_diag: if True, assume the diagonal is all ones
     Output:
       y: the solution vector to L @ y == b
     """
