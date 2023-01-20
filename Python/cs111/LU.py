@@ -167,9 +167,12 @@ def LUsolve(A, b, pivoting=True):
     # LU factorization
     L, U, p = LUfactor(A, pivoting=pivoting)
     
-    # Forward and back substitution
-    y = Lsolve(L, b[p], unit_diag=True)
-    x = Usolve(U, y)
+    # Forward substitution
+    y = Lsolve(L, b[p])
+
+    # Back substitution: Until you write Usolve() in homework, this cheats!
+    # x = Usolve(U, y)   # This is the line that should go here, once Usolve() is written.
+    x = npla.solve(U, y) # This is the line that cheats.
     
     # Residual norm
     rel_res = npla.norm(b - A@x) / npla.norm(b)
