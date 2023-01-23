@@ -1,0 +1,105 @@
+\documentclass[11pt]{article} 
+
+\usepackage{amssymb,amsmath}
+
+\newcommand{\numpy}{{\tt numpy}}            % tt font for numpy
+\newcommand{\scipy}{{\tt scipy}}            % tt font for scipy
+\newcommand{\matplotlib}{{\tt matplotlib}}  % tt font for matplotlib
+
+% \topmargin -1in
+% \textheight 9in
+% \oddsidemargin  -.25in
+% \evensidemargin -.20in
+% \textwidth 7in
+\topmargin -.5in
+\textheight 8in
+\oddsidemargin  -.25in
+\evensidemargin -.20in
+\textwidth 7in
+
+\begin{document}
+
+$$\mbox{\Large \bf CS 111: Homework 2: Due by 11:59 pm Sunday, January 29, 2023}$$
+\par\smallskip\noindent
+{\bf Submit your paper as one PDF file,
+and tell GradeScope which page(s) each problem is on.
+If you worked with a partner, you must each turn in your own 
+homework paper, and report the name and perm number of your partner.
+No groups of more than two allowed.
+}
+
+\par\bigskip
+{\bf 1.} Consider the permutation matrix 
+$$P =
+   \left(
+   \begin{array}{cccc}
+    0 & 1 & 0 & 0 \\ 	
+    0 & 0 & 0 & 1 \\ 	
+    0 & 0 & 1 & 0 \\ 	
+    1 & 0 & 0 & 0 \\ 	
+   \end{array} \right).
+$$
+
+\par\medskip
+{\bf 1.1.}
+Find a 4-permutation {\tt v = [ something ]}
+such that {\tt A[v,:] == P @ A} holds for
+{\em every}\, 4-by-4 matrix $A$.
+Test your answer by running a few lines of Python, 
+and include the code and output from your testing
+in your LaTeX writeup.
+
+\par\medskip
+{\bf 1.2.} For the same $P$, 
+find a 4-permutation {\tt w = [ something ]}
+such that {\tt A[:,w] == A @ P} holds for
+{\em every}\, 4-by-4 matrix $A$.
+Turn in your testing for your answer.
+
+\par\bigskip
+{\bf 2.}
+The routine {\tt Lsolve()} is in the file {\tt cs111/LU.py}.
+It is called as {\tt y = Lsolve(L, b)}, where $L$ must be
+unit lower triangular, that is,
+a square, lower triangular matrix whose diagonal is all ones.
+Modify {\tt Lsolve()} to take an optional third keyword argument
+{\tt unit\_diag} that defaults to {\tt True}. 
+If {\tt unit\_diag} is {\tt False}, 
+your modified routine should not require (or {\tt assert}) 
+that the diagonal is all ones, but instead it should do
+the necessary arithmetic to get the right answer to $Ly=b$
+for any nonsingular lower triangular matrix $L$. 
+Test your answer, both by itself and with {\tt LUsolve()},
+and include a screenshot of your testing along with
+your code as part of your LaTeX writeup.
+
+\par\bigskip
+{\bf 3.}
+Write {\tt Usolve()}, analogous to {\tt Lsolve()} in the file {\tt cs111/LU.py},
+to solve an upper triangular system $Ux=y$. 
+You should again include an optional argument {\tt unit\_diag},
+as in problem (2), but this time its default should be {\tt False}.
+Test your answer, both by itself and with {\tt LUsolve()},
+and include a screenshot of your testing along with
+your code as part of your LaTeX writeup.
+Hint: Loops can be run backward in Python, 
+say from $n-1$ down to $0$, by writing
+$$\mbox{\tt for i in reversed(range(n)):}$$
+
+\par\bigskip
+{\bf 4.}
+Suppose that $A$ is a nonsymmetric invertible matrix, 
+$b$ is a vector, and that you have called 
+$$\mbox{\tt L, U, p = cs111.LUfactor(A)}.$$
+Now suppose you want to solve the system $A^Tx=b$ (not $Ax=b$) for $x$.
+Show how to do this using only calls to {\tt Lsolve()} and {\tt Usolve()}
+(as modified in problems (2) and (3)).
+
+You may not call {\tt LUsolve()} or any of {\tt numpy}'s built-in solvers (like {\tt npla.solve()}),
+and you may not call {\tt LUfactor()} again.
+You are allowed to transpose any matrices you wish;
+recall that {\tt M.T} means the transposed matrix $M^T$ in {\tt numpy}.
+Test your method in {\tt numpy} on a randomly generated 6-by-6 matrix
+and show the code and output in Jupyter.
+
+\end{document}
