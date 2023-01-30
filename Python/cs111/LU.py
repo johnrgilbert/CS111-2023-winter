@@ -43,11 +43,12 @@ def LUfactorNoPiv(A):
 # Solve a unit lower triangular system L@y = b by forward substitution      #
 #############################################################################
 
-def Lsolve(L, b):
+def Lsolve(L, b, unit_diag=False):
     """Forward solve a unit lower triangular system Ly = b for y
     Parameters: 
       L: the matrix, must be square, lower triangular, with ones on the diagonal
       b: the right-hand side vector
+      unit_diag: if True, assume the diagonal is all ones
     Output:
       y: the solution vector to L @ y == b
     """
@@ -56,7 +57,8 @@ def Lsolve(L, b):
     m, n = L.shape
     assert m == n, "matrix L must be square"
     assert np.all(np.tril(L) == L), "matrix L must be lower triangular"
-    assert np.all(np.diag(L) == 1), "matrix L must have ones on the diagonal"
+    if unit_diag:
+        assert np.all(np.diag(L) == 1), "matrix L must have ones on the diagonal"
     
     # Make a copy of the rhs that we will transform into the solution
     assert b.ndim == 1, "right-hand side must be a 1-dimensional vector"
@@ -65,11 +67,12 @@ def Lsolve(L, b):
     
     # Forward solve
     for col in range(n):
+        if not unit_diag:
+            y[col] /= L[col, col]
         y[col+1:] -= y[col] * L[col+1:, col]
         
     return y
 # end of Lsolve
-
 
 
 #############################################################################
@@ -84,13 +87,27 @@ def Usolve(U, y, unit_diag=False):
       unit_diag: if True, assume the diagonal is all ones
     Output:
       x: the solution vector to U @ x == y
-
-    The code is not here; you'll write Usolve in homework.
     """
-    pass
-# end of Usolve
-        
+    # Check the input
+    m, n = U.shape
+    assert m == n, "matrix must be square"
+    assert np.all(np.triu(U) == U), "matrix U must be upper triangular"
+    if unit_diag:
+        assert np.all(np.diag(U) == 1), "matrix U must have ones on the diagonal"
 
+    # Make a copy of the rhs that we will transform into the solution
+    assert y.ndim == 1, "right-hand side must be a 1-dimensional vector"
+    assert y.shape[0] == n, "right-hand side must be same size as matrix"
+    x = y.astype(np.float64).copy()
+
+    # Back solve
+    for col in reversed(range(n)):
+        if not unit_diag:
+            x[col] /= U[col, col]
+        x[:col] -= x[col] * U[:col, col]
+        
+    return x
+# end of Usolve
 
 
 #############################################################################
