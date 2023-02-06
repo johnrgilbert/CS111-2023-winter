@@ -13,16 +13,6 @@ in the first section, on Wednesday, January 11.
 We will use a handful of demo routines in Python that live in a
 module called **cs111**. You'll need to be able to import them too.
 
-Back in the 2000's and early 2010's, this course used [MATLAB](https://www.mathworks.com/products/matlab.html), which is a proprietary
-interactive numerical software package that’s widely used in
-engineering. ([UCSB has a campuswide MATLAB license](https://www.software.ucsb.edu/info/matlab).) Numpy is
-designed to look a lot like Matlab. They both use arrays and matrices
-as their main data structures; the advantage of numpy is that you
-also have all of Python available. If you already know Matlab, [here
-is a cheat sheet](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html) for translating Matlab into numpy. The matplotlib
-library that we will use for plotting also has a lot of similarity
-to Matlab’s plotting routines.
-
 ### Clone the CS 111 directory from GitHub
 
 The first thing to do is to use **git** to clone the **CS111-2023-winter** tree from the [CS 111 GitHub site](https://github.com/johnrgilbert/CS111-2023-winter/tree/main).
