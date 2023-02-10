@@ -56,6 +56,7 @@ def make_A(k):
 #############################################################################
 # Make the temperature matrix (discrete Laplacian operator) in 3 dimensions #
 #############################################################################
+
 def make_A_3D(k):
     """Create the matrix for the 3-dimensional temperature problem on a k-by-k-by-k grid.
     Parameters: 
