@@ -88,25 +88,7 @@ def Usolve(U, y, unit_diag=False):
     Output:
       x: the solution vector to U @ x == y
     """
-    # Check the input
-    m, n = U.shape
-    assert m == n, "matrix must be square"
-    assert np.all(np.triu(U) == U), "matrix U must be upper triangular"
-    if unit_diag:
-        assert np.all(np.diag(U) == 1), "matrix U must have ones on the diagonal"
-
-    # Make a copy of the rhs that we will transform into the solution
-    assert y.ndim == 1, "right-hand side must be a 1-dimensional vector"
-    assert y.shape[0] == n, "right-hand side must be same size as matrix"
-    x = y.astype(np.float64).copy()
-
-    # Back solve
-    for col in reversed(range(n)):
-        if not unit_diag:
-            x[col] /= U[col, col]
-        x[:col] -= x[col] * U[:col, col]
-        
-    return x
+    RaiseNotImplementedException("Usolve not yet implemented")
 # end of Usolve
 
 
